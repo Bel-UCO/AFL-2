@@ -8,7 +8,8 @@ class ContactTab extends StatelessWidget {
     return Container(
       color: const Color.fromARGB(255, 250, 212, 216), // Background color
       padding: const EdgeInsets.all(16.0),
-      child: SingleChildScrollView( // Make the content scrollable
+      child: SingleChildScrollView(
+        // Make the content scrollable
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -49,18 +50,18 @@ class ContactTab extends StatelessWidget {
             TextField(
               controller: _userContactController,
               decoration: InputDecoration(
-                hintText: 'Your Message or Contact Info',
-                border: OutlineInputBorder(),
-                filled: true,
-                fillColor: Color.fromARGB(255, 253, 222, 225)
-              ),
+                  hintText: 'Your Message or Contact Info',
+                  border: OutlineInputBorder(),
+                  filled: true,
+                  fillColor: Color.fromARGB(255, 253, 222, 225)),
               maxLines: 4, // Allow multiple lines for user input
             ),
             SizedBox(height: 16),
             // Submit Button
             Center(
               child: ElevatedButton(
-                style: ElevatedButton.styleFrom(backgroundColor: Color.fromARGB(255, 205, 177, 206)),
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Color.fromARGB(255, 205, 177, 206)),
                 onPressed: () {
                   // Handle the user's input submission
                   String userContact = _userContactController.text;

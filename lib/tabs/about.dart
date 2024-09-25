@@ -24,7 +24,8 @@ class AboutTab extends StatelessWidget {
             Column(
               children: [
                 _buildEducationRow('2018', 'Strada Saint Thomas Aquino SHS'),
-                _buildEducationRow('2022', 'Pattern Maker - Lasalle College Indonesia'),
+                _buildEducationRow(
+                    '2022', 'Pattern Maker - Lasalle College Indonesia'),
                 _buildEducationRow('2023-', 'Currently in Ciputra University'),
               ],
             ),
@@ -70,14 +71,17 @@ class AboutTab extends StatelessWidget {
             width: 2.0, // Line thickness
             height: 20.0, // Line height
             color: Colors.grey, // Line color
-            margin: EdgeInsets.only(right: 10.0), // Space to the right of the line
+            margin:
+                EdgeInsets.only(right: 10.0), // Space to the right of the line
           ),
           // Year and description
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(year, style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+                Text(year,
+                    style:
+                        TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
                 Text(description),
               ],
             ),

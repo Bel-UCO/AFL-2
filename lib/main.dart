@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'tabs/profile.dart'; 
-import 'tabs/contact.dart'; 
-import 'tabs/about.dart'; 
+import 'tabs/profile.dart';
+import 'tabs/contact.dart';
+import 'tabs/about.dart';
 
 void main() {
   runApp(MyApp());
@@ -38,7 +38,10 @@ class MainPage extends StatelessWidget {
                   ),
                 ),
                 pinned: true,
-                title: Text("Bel's Portfolio", style: TextStyle(color: Color.fromARGB(255, 239, 215, 240)),),
+                title: Text(
+                  "Bel's Portfolio",
+                  style: TextStyle(color: Color.fromARGB(255, 239, 215, 240)),
+                ),
               ),
               SliverPersistentHeader(
                 pinned: true,
@@ -49,9 +52,11 @@ class MainPage extends StatelessWidget {
                       Tab(icon: Icon(Icons.person), text: 'About'),
                       Tab(icon: Icon(Icons.forum), text: 'Contact'),
                     ],
-                    indicatorColor: Color.fromARGB(255, 249, 234, 250), // Change indicator color
-                    labelColor: Colors.white,      // Active tab color
-                    unselectedLabelColor: Color.fromARGB(255, 90, 55, 90), // Inactive tab color
+                    indicatorColor: Color.fromARGB(
+                        255, 249, 234, 250), // Change indicator color
+                    labelColor: Colors.white, // Active tab color
+                    unselectedLabelColor:
+                        Color.fromARGB(255, 90, 55, 90), // Inactive tab color
                   ),
                 ),
               ),
